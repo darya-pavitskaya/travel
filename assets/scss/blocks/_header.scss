@@ -1,0 +1,80 @@
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 26px 0 26px 0;
+  box-shadow: 0px 4px 4px $shadow-blue;
+
+  @media screen and (max-width: 1440px) {
+    background-color: $bg-orange;
+  }
+
+  @media screen and (max-width: 390px) {
+    padding: 0;
+    padding-top: 40px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Red Hat Text", Arial, Helvetica, sans-serif;
+  }
+
+  &__button {
+    @include font (("Red Hat Text", Arial, Helvetica, sans-serif), 500, 21px);
+    @include adaptiveFontSize (16, 10);
+    padding: 10px 30px;
+    color: $main-white;
+    background-color: $main-blue;
+    border: none;
+    box-shadow: 0px 4px 4px $shadow, 0px 2px 3px $shadow-darkblue;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $main-orange;
+      transition: ease 0.5s;
+    }
+
+    @media screen and (max-width: 390px) {
+      display: none;
+    }
+  }
+
+  &__btn-burger {
+    @media screen and (max-width: 1440px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 390px) {
+      display: initial;
+      align-self: flex-start;
+      margin-right: 5px;
+      width: 35px;
+      height: 32px;
+      background-image: url("../icons/burger-menu.svg");
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &__btn-cross{
+    @media screen and (max-width: 1440px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 390px) {
+      position: relative;
+      left: -38px;
+      display: initial;
+      width: 35px;
+      height: 32px;
+      background-image: url("../icons/burger-cross.svg");
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

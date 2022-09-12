@@ -1,0 +1,27 @@
+.main {
+  &__preview {
+    padding-top: 32px;
+    padding-bottom: 333px;
+
+    @media screen and (max-width: 640px) {
+      padding-top: 57px;
+      padding-bottom: 82px;
+    }
+  }
+
+  &__steps {
+    margin-bottom: 98px;
+
+    @media screen and (max-width: 960px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__destinations {
+    margin-bottom: 81px;
+
+    @media screen and (max-width: 960px) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="icon" href="assets/icons/globe.ico">
+    <title>travel</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__navigation">
+        <a class="header__logo logo" aria-label="logo" href="#">
+          <svg width="30" height="30">
+            <use xlink:href="assets/icons/Sprite.svg#src-5"></use>
+          </svg>
+          <span class="logo__text"> Travel Portal</span>
+        </a>
+        <nav class="header__nav nav nav--closed">
+          <button class="header__btn-cross"></button>
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#search">How It Works</a></li>
+            <li class="nav__item"><a class="nav__link" href="#trip">Plan Your Trip</a></li>
+            <li class="nav__item"><a class="nav__link" href="#destinations">Destinations</a></li>
+            <li class="nav__item"><a class="nav__link" href="#stories">Travel Stories</a></li>
+            <li class="nav__item"><a class="nav__link account" href="#">Account</a></li>
+            <li class="nav__item"><a class="nav__link" href="#social">Social Media</a></li>
+          </ul>
+        </nav>
+        <button class="header__button">Login</button>
+        <button class="header__btn-burger"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__preview preview">
+      <h1 class="visually-hidden">Travel Portal</h1>
+      <div class="container">
+        <div class="preview__wrapper">
+          <p class="preview__title">Explore the beauty of the World</p>
+          <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
+          <form class="preview__form" action="#" method="get" id="search">
+            <input class="preview__input" type="search" placeholder="What would you like to do?">
+            <button class="preview__button button" type="submit">Start Planning</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="main__steps steps">
+      <div class="container">
+        <h2 class="steps__title title" id="trip">3 steps to the perfect trip</h2>
+        <div class="steps__wrapper">
+          <div class="steps__block">
+            <img class="steps__img steps__img_left" src="assets/icons/man.svg" alt="">
+            <p class="steps__text steps__text_left">Tell us what you want to do</p>
+          </div>
+          <div class="steps__block">
+            <img class="steps__img steps__img_center" src="assets/icons/calendar.svg" alt="">
+            <p class="steps__text steps__text_center">Share us preferable dates</p>
+          </div>
+          <div class="steps__block">
+            <img class="steps__img steps__img_right" src="assets/icons/airplane.svg" alt="">
+            <p class="steps__text steps__text_right">We will give you recommendations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__destinations destinations">
+      <h2 class="destinations__title title" id="destinations">popular destinations</h2>
+      <div class="destinations__carousel carousel">
+        <div class="carousel__btn carousel__btn-left">
+          <img src="assets/icons/arrow-left.svg" alt="">
+        </div>
+        <div class="carousel__wrapper">
+          <div class="carousel__slide" id="slide-left">
+            <picture>
+              <source media="(max-width: 690px)" srcset="assets/img/mobile-slider-spain.jpg">
+              <img class="carousel__img" src="assets/img/slider-spain.jpg" alt="Rocks in the sea">
+            </picture>
+            <span class="carousel__text">Spain</span>
+          </div>
+          <div class="carousel__slide" id="slide-center">
+            <picture>
+              <source media="(max-width: 690px)" srcset="assets/img/mobile-slider-japan.jpg">
+              <img class="carousel__img" src="assets/img/slider-japan.jpg" alt="Torii gate overlooking the lake">
+            </picture>
+            <span class="carousel__text">Japan</span>
+          </div>
+          <div class="carousel__slide" id="slide-right">
+            <picture>
+              <source media="(max-width: 690px)" srcset="assets/img/mobile-slider-usa.jpg">
+              <img class="carousel__img" src="assets/img/slider-usa.jpg" alt="The Golden Gate Bridge">
+            </picture>
+            <span class="carousel__text">USA</span>
+          </div>
+        </div>
+        <form class="carousel__form"> <!-- ! сделать этот блок div с фоном -->
+          <label class="carousel__bar" for="bt1">
+            <input class="carousel__radio-real visually-hidden" type="radio" name="radio" id="bt1">
+            <span class="carousel__radio-custom"></span>
+          </label>
+          <label class="carousel__bar" for="bt2">
+            <input class="carousel__radio-real visually-hidden" type="radio" name="radio" id="bt2" checked>
+            <span class="carousel__radio-custom"></span>
+          </label>
+          <label class="carousel__bar" for="bt3">
+            <input class="carousel__radio-real visually-hidden" type="radio" name="radio" id="bt3">
+            <span class="carousel__radio-custom"></span>
+          </label>
+        </form>
+        <div class="carousel__btn carousel__btn-right">
+          <img src="assets/icons/arrow-right.svg" alt="">
+        </div>
+      </div>
+      <button class="destinations__button button">
+        <svg class="destinations__icon" width="36" height="23" aria-hidden="true" focusable="false">
+          <use xlink:href="assets/icons/Sprite.svg#src-2"></use>
+        </svg>
+        <span>Find More</span>
+      </button>
+    </section>
+    <section class="main__stories stories">
+      <h2 class="stories__title title" id="stories">travel stories</h2>
+      <div class="stories__wrapper">
+        <div class="container">
+          <article class="stories__article">
+            <picture class="stories__img-wrapper">
+              <source media="(max-width: 490px)" srcset="assets/img/mobile-travel-img1.jpg">
+              <img class="stories__img" src="assets/img/travel-img1.jpg" alt="">
+            </picture>
+            <div class="stories__block">
+              <h3 class="stories__subtitle">10 Photos of Attractive Thailand</h3>
+              <p class="stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span class="hidden">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>Lorem ipsum dolor sit a<span class="hidden">met, consectetur adipiscing elit</span>...
+              <a class="stories__link" href="#"><br>Read More</a></p>
+            </div>
+          </article>
+          <article class="stories__article">
+            <picture class="stories__img-wrapper">
+              <source media="(max-width: 490px)" srcset="assets/img/mobile-travel-img2.jpg">
+              <img class="stories__img" src="assets/img/travel-img2.jpg" alt="">
+            </picture>
+            <div class="stories__block">
+              <h3 class="stories__subtitle">Canyonlands National Park, Utah</h3>
+              <p class="stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span class="hidden">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>Lorem ipsum dolor sit a<span class="hidden">met, consectetur adipiscing elit</span>...
+              <a class="stories__link" href="#"><br>Read More</a></p>
+            </div>
+          </article>
+          <article class="stories__article">
+            <picture class="stories__img-wrapper">
+              <source media="(max-width: 490px)" srcset="assets/img/mobile-travel-img3.jpg">
+              <img class="stories__img" src="assets/img/travel-img3.jpg" alt="the mountains">
+            </picture>
+            <div class="stories__block">
+              <h3 class="stories__subtitle">I left my heart in the Mountains!</h3>
+              <p class="stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span class="hidden">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>Lorem ipsum dolor sit a<span class="hidden">met, consectetur adipiscing elit</span>...
+              <a class="stories__link" href="#"><br>Read More</a></p>
+            </div>
+          </article>
+          <article class="stories__article">
+            <picture class="stories__img-wrapper">
+              <source media="(max-width: 490px)" srcset="assets/img/mobile-travel-img4.jpg">
+              <img class="stories__img" src="assets/img/travel-img4.jpg" alt="">
+            </picture>
+            <div class="stories__block">
+              <h3 class="stories__subtitle">The Longest journey in my life!</h3>
+              <p class="stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span class="hidden">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>Lorem ipsum dolor sit a<span class="hidden">met, consectetur adipiscing elit</span>...
+                <a class="stories__link" href="#"><br>Read More</a></p>
+            </div>
+          </article>
+          <button class="stories__button button">
+            <svg class="stories__icon" width="36" height="23" aria-hidden="true" focusable="false">
+              <use xlink:href="assets/icons/Sprite.svg#src-2"></use>
+            </svg>
+            <span>See More</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__main-links">
+          <a class="footer__school" href="https://rs.school/js-stage0/">
+            <svg width="150" height="54" aria-label="Rolling Scopes School Logo">
+              <use class="footer__svg-school" xlink:href="assets/icons/Sprite.svg#src-9"></use>
+            </svg>
+          </a>
+          <a class="footer__github" href="https://github.com/daryav95/?tab=repositories">
+            <svg width="33" height="33" aria-label="my github">
+              <use class="footer__svg-github" xlink:href="assets/icons/Sprite.svg#src-4"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__text">All Rights Reserved © Travel Portal</p>
+        <ul class="footer__list" id="social">
+          <li class="footer__item"><a class="footer__link" href="https://rs.school/js-stage0/">
+            <svg width="33" height="33" aria-label="logo instagram">
+              <use class="footer__svg-instagram" xlink:href="assets/icons/Sprite.svg#src-6"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="footer__item"><a class="footer__link" href="https://github.com/daryav95/?tab=repositories">
+            <svg class="footer__svg-youtube" width="35" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.894 5.609H9.067a5.609 5.609 0 0 0-5.609 5.609v11.218a5.609 5.609 0 0 0 5.61 5.609h16.826a5.609 5.609 0 0 0 5.61-5.61V11.219a5.609 5.609 0 0 0-5.61-5.61z" stroke="#F8F8F8" stroke-width="4.167" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="m21.688 16.827-7.012-4.207v8.414l7.012-4.207z" stroke="#F8F8F8" stroke-width="4.167" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg width="33" height="33" aria-label="logo twitter">
+                <use class="footer__svg-twitter" xlink:href="assets/icons/Sprite.svg#src-11"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="popup hidden">
+    <div class="popup__content">
+      <form class="popup__login-form login" action="#">
+        <h2 class="login__title">Log in to your account</h2>
+        <fieldset class="login__enter enter">
+          <button class="enter__btn enter-facebook">
+            <img class="enter__icon" src="assets/icons/facebook.svg" alt="">
+            <span class="enter__text">Sign In with Facebook</span>
+          </button>
+          <button class="enter__btn enter-google">
+            <img class="enter__icon" src="assets/icons/google.svg" alt="">
+            <span class="enter__text">Sign In with Google</span>
+          </button>
+          <div class="enter__or">
+            <span>or</span>
+          </div>
+        </fieldset>
+        <fieldset class="login__create create">
+          <label class="create__text" for="email">Email</label>
+          <input class="create__input" type="email" id="email">
+          <label class="create__text" for="password">Password</label>
+          <input class="create__input" type="password" id="password">
+        </fieldset>
+        <button class="login__btn" type="submit">Sign In</button>
+        <a class="login__main-link" href="#"><span>Forgot Your Password?</span></a><hr class="login__line">
+        <div class="login__text">
+          <span class="login__slogan">Don’t have an account?</span>
+          <a class="login__link" href="#">Register</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@keyframes moveRightDesc {
+  from {left: 0}
+  to {left: -830px}
+}
+
+.transition-right {
+  animation-name: moveRightDesc;
+  animation-duration: 2s;
+}
+
+@keyframes moveLeftDesc {
+  from {left: 0}
+  to {left: 830px}
+}
+
+.transition-left {
+  animation-name: moveLeftDesc;
+  animation-duration: 2s;
+}
+
+@keyframes moveRightMob {
+  from {left: 0}
+  to {left: -420px}
+}
+
+.transition-right-mobile {
+  animation-name: moveRightMob;
+  animation-duration: 2s;
+}
+
+@keyframes moveLeftMob {
+  from {left: 0}
+  to {left: 420px}
+}
+
+.transition-left-mobile {
+  animation-name: moveLeftMob;
+  animation-duration: 2s;
+}
+

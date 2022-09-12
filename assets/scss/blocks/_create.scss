@@ -1,0 +1,30 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  @media screen and (max-width: 390px) {
+    width: 340px;
+  }
+
+  &__text {
+    margin-bottom: 5px;
+    @include font (("Aleo", "Times New Roman", Times, serif), 400, 19px);
+    @include adaptiveFontSize (16, 12);
+    color: $main-blue;
+  }
+
+  &__input {
+    width: 560px;
+    height: 56px;
+    margin-bottom: 25px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    @media screen and (max-width: 390px) {
+      width: 340px;
+    }
+  }
+}

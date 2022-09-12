@@ -1,0 +1,73 @@
+.login {
+  &__title {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    text-align: center;
+    @include font (("Aleo", "Times New Roman", Times, serif), 700, 38px);
+    @include adaptiveFontSize (32, 14);
+    color: $main-blue;
+  }
+
+  // &__enter {
+  // }
+
+  // &__create {
+  // }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 560px;
+    height: 54px;
+    color: $main-white;
+    @include font (("Red Hat Text", Arial, Helvetica, sans-serif), 400, 26px);
+    @include adaptiveFontSize (20, 16);
+    background-color: $main-blue;
+    border: none;
+    border-radius: 10px;
+    @media screen and (max-width: 390px) {
+      width: 340px;
+    }
+  }
+
+  &__main-link {
+    display: block;
+    margin-bottom: 26px;
+    text-align: center;
+    @include font (("Aleo", "Times New Roman", Times, serif), 700, 18px);
+    @include adaptiveFontSize (15, 11);
+    color: $main-blue;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    text-decoration: underline;
+  }
+
+  &__line {
+    width: 560px;
+    height: 0.9px;
+    margin-bottom: 20px;
+    background-color: $shadow-blue;
+  }
+
+  &__text {
+    margin-bottom: 23px;
+    text-align: center;
+    @include font (("Aleo", "Times New Roman", Times, serif), 700, 18px);
+    @include adaptiveFontSize (15, 11);
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  }
+
+  &__slogan {
+    color: $shadow-blue;
+  }
+
+  &__link {
+    color: $main-blue;
+    text-decoration: underline;
+  }
+}
+
+.login-remove {
+  display: none;
+}

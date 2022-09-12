@@ -1,0 +1,77 @@
+.footer {
+  position: relative;
+  z-index: 10;
+  padding: 5px;
+  background-color: transparent;
+
+  @media screen and (max-width: 390px) {
+    padding: 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 640px) {
+      justify-content: center;
+    }
+  }
+
+  &__main-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+
+  &__school {
+    margin-right: 5px;
+  }
+
+  &__text {
+    margin-top: 10px;
+    margin-right: 50px;
+    color: $main-white;
+    @include font (("Red Hat Text", Arial, Helvetica, sans-serif), 500, 21px);
+    @include adaptiveFontSize (16, 10);
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  &__item {
+    padding-right: 20px;
+
+    &:nth-last-of-type(1) {
+      padding-right: 0;
+    }
+  }
+}
+
+.footer__svg-school,
+.footer__svg-github,
+.footer__svg-instagram,
+.footer__svg-twitter {
+  fill: $main-white;
+}
+
+.footer__svg-school:hover,
+.footer__svg-github:hover,
+.footer__svg-instagram:hover,
+.footer__svg-youtube:hover,
+.footer__svg-twitter:hover {
+  fill: $main-orange;
+  transition: ease 0.3s;
+}
